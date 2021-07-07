@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Tarjeta from "./Componentes/Tarjeta";
+// import Boton from "./Componentes/Boton";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Tarjeta precio="200" producto="a"></Tarjeta>
+      <Tarjeta precio="300" producto="b"></Tarjeta>
+      <Tarjeta precio="400" producto="c"></Tarjeta>
+      <Tarjeta precio="500" producto="d"></Tarjeta>
+      <Tarjeta precio="600" producto="e"></Tarjeta>
     </div>
   );
-}
+};
 
 export default App;
